@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="example.css">
     
     <script>function getlevel(){
-        if(document.getElementById('word').value == "98500"){document.cookie = "yuki=True; path=/;";}else{
+        if(document.getElementById('kazudayo').value == "98500"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
         req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
-        req.open("GET", "/answer?q="+document.getElementById('word').value);
+        req.open("GET", "/answer?q="+document.getElementById('kazudayo').value);
         req.send();}
     }</script>
     
@@ -17,7 +17,7 @@
     <h3><font color=”#0067C0”>パスワード入力してください！</font></h3><br>
     <h3><font color=”#F6F7F8”>答えを白い枠に記入して、枠の右にあるおけボタンを押してください。</font></h3><br>
     <h3><font color=”#ED1A3D”>作成者(IPad4610)</font></h3><br>
-    <input id="word" type="text"></input><input type="button" onClick="getlevel()"><font color=”#FAC61E”>おけ</font></input>
+    <input id="kazudayo" type="text"></input><input type="button" onClick="getlevel()"><font color=”#FAC61E”>おけ</font></input>
      <div id="info">
 </body>
 </html>
