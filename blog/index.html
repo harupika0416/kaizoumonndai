@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="example.css">
     
     <script>function getlevel(){
-        if(document.getElementById('word').value == "20800"){document.cookie = "yuki=True; path=/;";}else{
+        if(document.getElementById('word').value == "スプラローラコラボ"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
         req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
         req.open("GET", "/answer?q="+document.getElementById('word').value);
@@ -14,9 +14,9 @@
     
 </head>
 <body>
-    <h3><font color=”#0067C0”>パスワード入力してください！</font></h3><br>
+    <h3><font color=”#0067C0”>スプラの武器の名前を入力してください！</font></h3><br>
     <h3><font color=”#F6F7F8”>答えを白い枠に入れてくれ 入れたらおけボタンを押してくれよな</font></h3><br>
-    <h3><font color=”#ED1A3D”>作成者(IPad4610)パス変更済み</font></h3><br>
+    <h3><font color=”#ED1A3D”>作成者(harupika)パス変更済み</font></h3><br>
     <input id="word" type="text"></input><input type="button" onClick="getlevel()"><font color=”#FAC61E”>おけ</font></input>
      <div id="info">
 </body>
